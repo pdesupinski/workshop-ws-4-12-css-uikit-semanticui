@@ -4,14 +4,15 @@
 <head>
   <title></title>
   <link rel="stylesheet" href="uikit/css/uikit.custom.css" />
+  <link rel="stylesheet" href="uikit/css/components/slideshow.css" />
 </head>
 
 <body>
-  <header class="">
+  <header class="uk-flex uk-flex-space-around uk-flex-middle">
     <a href="#"><img src="img/logo.png"/></a>
     <div>
-      <nav class="">
-        <ul class="">
+      <nav class="uk-navbar">
+        <ul class="uk-navbar-nav">
           <li><a href="#">Admissions</a></li>
           <li><a href="#">Schools</a></li>
           <li><a href="#">Centers</a></li>
@@ -21,12 +22,12 @@
           <li><a href="#">Giving</a></li>
         </ul>
       </nav>
-      <nav class="">
-        <ul class="">
-          <li class="" >
+      <nav class="uk-navbar">
+        <ul class="uk-navbar-nav">
+          <li data-uk-dropdown class="uk-parent" >
             <a href="#">EDUCATION</a>
-            <div class="">
-              <ul class="">
+            <div class="uk-dropdown uk-dropdown-navbar">
+              <ul class="uk-nav uk-nav-navbar">
                 <li><a href="#">Degree Finder</a></li>
                 <li><a href="#">Departments & Programs</a></li>
                 <li><a href="#">Global Learning</a></li>
@@ -101,6 +102,21 @@
       </div>
     </div>
 
+    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
+      <ul class="uk-slideshow">
+        <li> <img src="img/slide-1.jpg" alt="test" uk-cover> </li>
+        <li> <img src="img/slide-2.jpg" alt="test" uk-cover> </li>
+        <li> <img src="img/slide-3.jpg" alt="test" uk-cover> </li>
+      </ul>
+      <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+      <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+      <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href=""></a></li>
+        <li data-uk-slideshow-item="1"><a href=""></a></li>
+        <li data-uk-slideshow-item="2"><a href=""></a></li>
+      </ul>
+    </div>
+
   </main>
 
   <footer>
@@ -139,6 +155,8 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="uikit/js/uikit.min.js"></script>
+  <script src="uikit/js/components/slideshow.min.js"></script>
+<script src="uikit/js/components/slideshow-fx.min.js"></script>
 </body>
 
 </html>
